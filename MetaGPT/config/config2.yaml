@@ -1,0 +1,15 @@
+# Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
+# Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
+# Config Docs: https://docs.deepwisdom.ai/main/en/guide/get_started/configuration.html
+llm:
+  api_type: "open_llm"  # or azure / ollama / groq etc.
+  model: "Qwen1.5-14B-Chat"  # or gpt-3.5-turbo
+#  base_url: "https://u372299-b45c-e144e0a9.westx.seetacloud.com:8443/v1"  # or forward url / other llm url
+  base_url: "https://u372299-8961-1faee6cd.westx.seetacloud.com:8443/v1"  # or forward url / other llm url
+  api_key: "openai"
+embedding:
+  api_type: "ollama"
+  base_url: "http://localhost:11434"
+#  base_url: "http://http://localhost:11434"
+  model: "dztech/bge-large-zh:v1.5"
+  dimensions: "1024" # output dimension of embedding mode
